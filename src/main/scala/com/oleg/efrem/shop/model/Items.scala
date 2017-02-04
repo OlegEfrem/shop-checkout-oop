@@ -3,8 +3,14 @@ package com.oleg.efrem.shop.model
 sealed abstract class Items(quantity: Int) {
   val price: Double
   val offer: Option[Offer]
+
+  def totalPriceWithOffer: Double =
+    offer match {
+      case Some(off) => quantity / off.buy * off.pay * price + quantity % off.buy * price
+      case None => totalPrice
+    }
+
   def totalPrice: Double = quantity * price
-  def totalPriceWithOffer: Double = 0.0
 }
 
 case class Apples(quantity: Int) extends Items(quantity) {
