@@ -4,6 +4,7 @@ import com.oleg.efrem.shop.model.Items
 
 trait ShopCheckout {
   def checkout(items: Seq[Items]): Double
+  def checkoutWithOffer(items: Seq[Items]): Double
 }
 
 object ShopCheckout {
