@@ -2,7 +2,7 @@ package com.oleg.efrem.shop.model
 
 sealed abstract class Items(quantity: Int) {
   val price: Double
-  val totalPrice: Double = 0.0
+  def totalPrice: Double = quantity * price
 }
 
 case class Apples(quantity: Int) extends Items(quantity) {
@@ -12,5 +12,4 @@ case class Apples(quantity: Int) extends Items(quantity) {
 case class Oranges(quantity: Int) extends Items(quantity) {
   override val price: Double = 0.25
 }
-
 

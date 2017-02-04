@@ -1,7 +1,7 @@
 package com.oleg.efrem.shop
 
-import com.oleg.efrem.shop.model.{Apples, Oranges}
-import org.scalatest.{Matchers, WordSpec}
+import com.oleg.efrem.shop.model.{ Apples, Oranges }
+import org.scalatest.{ Matchers, WordSpec }
 
 class ShopCheckoutTest extends WordSpec with Matchers {
   val service: ShopCheckout = ShopCheckout()

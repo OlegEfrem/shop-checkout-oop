@@ -7,7 +7,5 @@ trait ShopCheckout {
 }
 
 object ShopCheckout {
-  def apply(): ShopCheckout = new ShopCheckout {
-    override def checkout(items: Seq[Items]): Double = 0.0
-  }
+  def apply(): ShopCheckout = new DefaultShoptCheckout
 }
