@@ -1,3 +1,3 @@
-package com.oleg.efrem.shop.model
+package com.oef.shop.checkout.model
 
 case class Offer(buy: Int, pay: Int)

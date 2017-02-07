@@ -1,6 +1,7 @@
 package com.oleg.efrem.shop
 
-import com.oleg.efrem.shop.model.{ Apples, Oranges }
+import com.oef.shop.checkout.ShopCheckout
+import com.oef.shop.checkout.model.{ Apples, Oranges }
 import org.scalatest.{ Matchers, WordSpec }
 
 class ShopCheckoutTest extends WordSpec with Matchers {

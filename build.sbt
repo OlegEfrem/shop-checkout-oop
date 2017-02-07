@@ -1,3 +1,5 @@
+organization := "com.oef"
+
 name := "shop-checkout-oop"
 
 version := "1.0"

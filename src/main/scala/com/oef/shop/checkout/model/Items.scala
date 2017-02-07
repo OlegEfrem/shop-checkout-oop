@@ -1,4 +1,4 @@
-package com.oleg.efrem.shop.model
+package com.oef.shop.checkout.model
 
 sealed abstract class Items(quantity: Int) {
   val price: Double
